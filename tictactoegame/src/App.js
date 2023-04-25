@@ -1,10 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { Box } from './Component/Box';
+
+import {Board} from './Component/Board';
 
 function App() {
+  const board = ["x","x","x","x","x","x","x","x","x"]
   return (
-    <Box/>
+    <div className='App'>
+    <Board board = {board} onClick={null} />
+    </div>
+   
   );
 }
 
